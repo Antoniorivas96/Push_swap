@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 16:27:50 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/05 16:17:46 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/28 16:43:55 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef    LIBFT_H
-# define    LIBFT_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <stdlib.h>
 # include <stdio.h>

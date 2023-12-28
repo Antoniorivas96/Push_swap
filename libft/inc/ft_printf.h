@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/05 13:12:54 by antonio           #+#    #+#             */
-/*   Updated: 2023/12/26 18:02:53 by anrivas-         ###   ########.fr       */
+/*   Created: 2023/12/28 16:53:22 by anrivas-          #+#    #+#             */
+/*   Updated: 2023/12/28 16:54:39 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ft_printf_H
-# define ft_printf_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+
 # include <unistd.h>
 # include <stdarg.h>
 
