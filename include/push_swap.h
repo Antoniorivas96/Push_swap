@@ -6,7 +6,7 @@
 /*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:53:16 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/27 13:35:56 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/29 17:01:58 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,6 @@ void	prep_for_push(t_stack **list, t_stack *top_list, char list_name);
 void	sa(t_stack **a, bool ft_printf);
 void	sb(t_stack **b, bool ft_printf);
 void	ss(t_stack **a, t_stack **b, bool ft_printf);
+char **split(char *s, char c);
 
 #endif

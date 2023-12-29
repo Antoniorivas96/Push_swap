@@ -6,7 +6,7 @@
 /*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 13:36:27 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/27 13:36:32 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/29 16:59:19 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 	if (argc == 1 || (argc == 2 && !argv[1][0]))
 		return (1);
 	else if (argc == 2)
-		argv = ft_split(argv[1], ' ');
+		argv = split(argv[1], ' ');
 	start_stack_a(&a, argv + 1);
 	if (!list_sorted(a))
 	{

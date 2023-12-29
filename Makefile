@@ -22,7 +22,7 @@ PUSH_SWAP_DIR		=	$(SRC_DIR)push_swap/error.c \
 						$(SRC_DIR)push_swap/rotate.c \
 						$(SRC_DIR)push_swap/stack_init.c \
 						$(SRC_DIR)push_swap/swap.c \
-
+						$(SRC_DIR)push_swap/split.c \
 
 SRCS 				=  $(PUSH_SWAP_DIR)
 
