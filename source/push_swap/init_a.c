@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_a.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 13:35:36 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/26 17:53:48 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/29 13:23:57 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static void	target_a(t_stack *a, t_stack *b)
 		index_best_target = LONG_MIN;
 		current_b = b;
 		while (current_b)
-		{	
+		{
 			if (current_b->number < a->number
 				&& current_b->number > index_best_target)
 			{

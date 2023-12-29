@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*    min_top.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/10 12:57:14 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/29 13:22:27 by anrivas-         ###   ########.fr       */
+/*   Created: 2023/12/29 13:32:23 by anrivas-          #+#    #+#             */
+/*   Updated: 2023/12/29 13:34:30 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/push_swap.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	min_on_top(t_stack **a)
 {
-	int		cont;
-	char	*str;
-
-	if (!s || !f)
-		return (0);
-	cont = ft_strlen(s);
-	str = malloc((cont + 1) * sizeof(char));
-	if (!str)
-		return (0);
-	cont = 0;
-	while (s[cont])
+	while ((*a)->number != min_number(*a)->number)
 	{
-		str[cont] = f(cont, s[cont]);
-		cont++;
+		if (min_number(*a)->above_median)
+			ra(a, false);
+		else
+			rra(a, false);
 	}
-	str[cont] = '\0';
-	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 12:20:43 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/05/23 18:00:02 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/29 13:18:47 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-		new->next = *lst;
-		*lst = new;
+	new->next = *lst;
+	*lst = new;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:53:16 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/27 13:35:56 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/29 17:19:33 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,7 @@ void	prep_for_push(t_stack **list, t_stack *top_list, char list_name);
 void	sa(t_stack **a, bool ft_printf);
 void	sb(t_stack **b, bool ft_printf);
 void	ss(t_stack **a, t_stack **b, bool ft_printf);
+void	min_on_top(t_stack **a);
+char	**split(char *s, char c);
 
 #endif

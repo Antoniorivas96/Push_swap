@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   stack_init.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 13:36:59 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/27 13:37:19 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/29 13:38:52 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	number_to_node(t_stack **set_list, int n)
 {
 	t_stack	*node;
 	t_stack	*last_node;
-	
+
 	if (!set_list)
 		return ;
 	node = malloc(sizeof(t_stack));

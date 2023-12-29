@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 13:35:27 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/26 18:02:53 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/29 13:23:40 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	error(t_stack **a)
 	t_stack	*present;
 
 	if (!a)
-		return ;	
+		return ;
 	present = *a;
 	while (present)
 	{

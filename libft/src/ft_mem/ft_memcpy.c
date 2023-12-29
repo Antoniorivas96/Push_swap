@@ -6,7 +6,7 @@
 /*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 17:03:17 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/05/23 16:08:28 by anrivas-         ###   ########.fr       */
+/*   Updated: 2023/12/29 13:19:43 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	if (!src && !dst)
 		return (0);
-		cont = 0;
+	cont = 0;
 	while (cont < n)
 	{
 		*((unsigned char *)(dst + cont)) = *((unsigned char *)(src + cont));
