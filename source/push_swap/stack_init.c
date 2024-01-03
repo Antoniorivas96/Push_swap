@@ -3,39 +3,60 @@
 /*                                                        :::      ::::::::   */
 /*   stack_init.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anrivas- <anrivas-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: anrivas- <anrivas-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 13:36:59 by anrivas-          #+#    #+#             */
-/*   Updated: 2023/12/29 13:38:52 by anrivas-         ###   ########.fr       */
+/*   Updated: 2024/01/02 20:49:20 by anrivas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/push_swap.h"
 
-void	number_to_node(t_stack **set_list, int n)
+static long	ft_atol(const char *s)
 {
-	t_stack	*node;
-	t_stack	*last_node;
+	long	result;
+	int		sign;
 
-	if (!set_list)
-		return ;
-	node = malloc(sizeof(t_stack));
-	if (!node)
-		return ;
-	node->next = NULL;
-	node->number = n;
-	if (!(*set_list))
+	result = 0;
+	sign = 1; 
+	while (*s == ' ' || *s == '\t' || *s == '\n' || \
+			*s == '\r' || *s == '\f' || *s == '\v')
+		s++;
+	if (*s == '-' || *s == '+')
 	{
-		*set_list = node;
-		node->prev = NULL;
+		if (*s == '-')
+			sign = -1;
+		s++;
 	}
-	else
-	{
-		last_node = f_last_node(*set_list);
-		last_node->next = node;
-		node->prev = last_node;
-	}
+	while (ft_isdigit(*s))
+		result = result * 10 + (*s++ - '0');
+	return (result * sign);
 }
+
+	void	number_to_node(t_stack **set_list, int n)
+	{
+		t_stack	*node;
+		t_stack	*last_node;
+
+		if (!set_list)
+			return ;
+		node = malloc(sizeof(t_stack));
+		if (!node)
+			return ;
+		node->next = NULL;
+		node->number = n;
+		if (!(*set_list))
+		{
+			*set_list = node;
+			node->prev = NULL;
+		}
+		else
+		{
+			last_node = f_last_node(*set_list);
+			last_node->next = node;
+			node->prev = last_node;
+		}
+	}
 
 void	start_stack_a(t_stack **a, char **argv)
 {
@@ -47,8 +68,8 @@ void	start_stack_a(t_stack **a, char **argv)
 	{
 		if (syntax_error(argv[cont]))
 			free_error(a);
-		value = ft_atoi(argv[cont]);
-		if (cont > INT_MAX || cont < INT_MIN)
+		value = ft_atol(argv[cont]);
+		if (value > INT_MAX || value < INT_MIN)
 			free_error(a);
 		if (duplicate(*a, (int)value))
 			free_error(a);
